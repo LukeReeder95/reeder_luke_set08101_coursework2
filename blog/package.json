@@ -1,0 +1,20 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "description": "test app for express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.5.8",
+    "express": "*",
+    "express-validator": "^5.1.1",
+    "mongodb": "^3.0.5",
+    "mongojs": "^2.5.0",
+    "nodemon": "^1.17.3"
+  },
+  "author": "Luke Reeder",
+  "license": "ISC"
+}

@@ -1,0 +1,22 @@
+<% include partials/header %>
+<h1>My Blog</h2>
+<% if(errors){ %>
+    <ul>
+    <% errors.forEach(function(error){ %>
+        <li><%= error.msg %></li>
+    <% }) %>
+    </ul>
+<% } %>
+<ul id="blogUL">
+        <div id="blogposts">
+<% posts.forEach(function(posts){ %>
+<li> <div id="postTitle"><%= posts.title %></div><br> <div id="post"><%= posts.blogpost %></div> <br>
+    <div id="buttons">
+    <button href="#" class="deletePost" data-id='<%= posts._id %>'>Delete</button>
+    <button href="#" class="editTitle" data-id='<%= posts._id %>'>Amend Title</button>
+    <button href="#" class="editPost" data-id='<%= posts._id %>'>Amend Post</button></li>
+    <%}) %>
+</div>
+</div>
+</ul>
+<% include partials/footer %>
